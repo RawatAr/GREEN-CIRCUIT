@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        body {
+           background-image: url('https://th.bing.com/th?id=OIP.eWxk4doq5lrZ97ZO6txKjwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+           background-size: auto;
+           
+           background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+            margin: 0; /* Added to remove default margin */
+            display: flex; /* Added to make content center-aligned */
+            justify-content: center; /* Added to make content center-aligned */
+            align-items: center; /* Added to make content center-aligned */
+        }
+        select, input.IMEIno {
+            font-size: 1em;
+            padding: 10px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            background-color: #ffffff;
+            color: #333333;
+            outline: none;
+            margin-bottom: 10px; /* Added for spacing */
+        }
+        .donate {
+            text-align: center;
+            padding: 30px 50px 50px 50px;
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+            background-color: rgb(240, 234, 227);
+            border-radius: 5px;
+            /* Removed background-image */
+        }
+        .device, .modelphone, .laptop, .tv, .imei, .buttons-container {
+            text-align: center;
+            padding: 20px; /* Adjusted padding */
+            font-size: 25px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: beige;
+            border-radius: 10px;
+            background-color: rgb(240, 234, 227);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-bottom: 20px; /* Added for spacing */
+        }
+
+        /* Added CSS for the buttons */
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .submit-button,
+        .cancel-button {
+            padding: 10px 20px;
+            background-color: rgb(89, 89, 94);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <div class="device">
+            <label>DEVICE TYPE:
+                <select name="language">
+                    <option value="PHONE">PHONE</option>
+                    <option value="LAPTOP">LAPTOP</option>
+                    <option value="TELIVISION">TELEVISION/monitor</option>
+                </select>
+            </label>
+        </div> 
+        <div class="modelphone">
+            <label>PHONE MODEL:
+                <select name="language">
+                    <option value="redmi">redmi</option>
+                    <option value="apple">apple</option>
+                    <option value="samsung">samsung</option>
+                    <option value="motorolla">motorola</option>
+                    <option value="na">n/a</option>
+                </select>
+            </label>
+        </div>
+        <div class="laptop">
+            <label>LAPTOP MODEL:
+                <select name="language">
+                    <option value="hp">hp</option>
+                    <option value="dell">dell</option>
+                    <option value="mac">mac book</option>
+                    <option value="samsung">samsung</option>
+                    <option value="na">n/a</option>
+                </select>
+            </label>
+        </div>
+        <div class="tv">
+            <label>TV MODEL:
+                <select name="language">
+                    <option value="sony">sony</option>
+                    <option value="samsung">samsung</option>
+                    <option value="lg">lg</option>
+                    <option value="xiaomi">xiaomi</option>
+                    <option value="na">n/a</option>
+                </select>
+            </label>
+        </div>
+        <div class="imei">
+            <label>IMEI/DEVICE NO: <input type='text' class='IMEIno'></label>
+        </div>
+        <div class="buttons-container">
+            <button type="submit" class="cancel-button">cancel</button>
+            <button type="button" class="submit-button">next</button>
+        </div>
+    </form>
+</body>
+</html>
